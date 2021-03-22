@@ -1,0 +1,13 @@
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\obj\Debug\netcoreapp3.1\ITIROD_1lab.AssemblyInfoInputs.cache
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\obj\Debug\netcoreapp3.1\ITIROD_1lab.AssemblyInfo.cs
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\obj\Debug\netcoreapp3.1\ITIROD_1lab.csproj.CoreCompileInputs.cache
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\bin\Debug\netcoreapp3.1\ITIROD_1lab.exe
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\bin\Debug\netcoreapp3.1\ITIROD_1lab.deps.json
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\bin\Debug\netcoreapp3.1\ITIROD_1lab.runtimeconfig.json
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\bin\Debug\netcoreapp3.1\ITIROD_1lab.runtimeconfig.dev.json
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\bin\Debug\netcoreapp3.1\ITIROD_1lab.dll
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\bin\Debug\netcoreapp3.1\ITIROD_1lab.pdb
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\obj\Debug\netcoreapp3.1\ITIROD_1lab.dll
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\obj\Debug\netcoreapp3.1\ITIROD_1lab.pdb
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\obj\Debug\netcoreapp3.1\ITIROD_1lab.genruntimeconfig.cache
+C:\Users\ilyat\source\repos\ITIROD_1lab\ITIROD_1lab\obj\Debug\netcoreapp3.1\ITIROD_1lab.csprojAssemblyReference.cache

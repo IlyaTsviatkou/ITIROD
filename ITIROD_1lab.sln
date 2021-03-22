@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITIROD_1lab", "ITIROD_1lab\ITIROD_1lab.csproj", "{2329C0C6-0702-49D5-A4A9-CB18B0DE21E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2329C0C6-0702-49D5-A4A9-CB18B0DE21E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2329C0C6-0702-49D5-A4A9-CB18B0DE21E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2329C0C6-0702-49D5-A4A9-CB18B0DE21E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2329C0C6-0702-49D5-A4A9-CB18B0DE21E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C2D7F6F-88E0-4B4C-845E-3CBAFC15835A}
+	EndGlobalSection
+EndGlobal
