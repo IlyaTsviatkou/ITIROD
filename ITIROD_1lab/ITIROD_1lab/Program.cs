@@ -20,36 +20,7 @@ namespace ITIROD_1lab
         static void Main(string[] args)
         {
             user = User.getInstance();
-            while (true)
-            {
-                try
-                {
-                    Console.Write("Введите порт для прослушивания: "); 
-                    localPort = Int32.Parse(Console.ReadLine());
-                    Console.Write("Введите удаленный адрес для подключения: ");
-                    remoteAddress = Console.ReadLine();
-                    Console.Write("Введите порт для подключения: ");
-                    remotePort = Int32.Parse(Console.ReadLine()); 
-
-                    receiveThread = new Thread(new ThreadStart(ReceiveMessage));
-                    receiveThread.Start();
-                    identification = "";
-                    identification += localPort + "|" + remoteAddress + "|" + remotePort;
-                    user.chat.Add(identification,new List<string>());
-                    Console.Clear();
-                    if(user.chat.Count>0)
-                    {
-                        Console.WriteLine(user.chatToString());
-                    }
-                    SendMessage(); 
-                    
-                    break;
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Введите другие данные!!");      
-                }
-            }
+            Enter();
         }
         public static string NewID()
         {
@@ -142,9 +113,14 @@ namespace ITIROD_1lab
 
                     Thread receiveThread = new Thread(new ThreadStart(ReceiveMessage));
                     receiveThread.Start();
+                    
+                   
                     identification = "";
                     identification += localPort + "|" + remoteAddress + "|" + remotePort;
-                    user.chat.Add(identification, new List<string>());
+                    if (!user.chat.ContainsKey(identification))
+                    {
+                        user.chat.Add(identification, new List<string>());
+                    }
                     Console.Clear();
                     if (user.chat.Count > 0)
                     {
@@ -162,10 +138,11 @@ namespace ITIROD_1lab
         }
         private static void ReceiveMessage()
         {
-            receiver = new UdpClient(localPort); 
+            receiver = new UdpClient(localPort);
             IPEndPoint remoteIp = null;
             try
             {
+                
                 while (true)
                 {
                     byte[] data = receiver.Receive(ref remoteIp); 
@@ -183,7 +160,7 @@ namespace ITIROD_1lab
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex.Message);
+                //throw ex;
             }
             finally
             {
