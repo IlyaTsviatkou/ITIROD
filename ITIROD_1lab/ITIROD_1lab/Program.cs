@@ -55,7 +55,7 @@ namespace ITIROD_1lab
                     
             }
 
-            public string chatToString()
+            public string chatToString(String identification)
             {
                 string result = "";
                 foreach (var item in chat[identification])
@@ -70,6 +70,11 @@ namespace ITIROD_1lab
             sender = new UdpClient(); 
             try
             {
+                string m = "enter";
+
+                byte[] d = Encoding.Unicode.GetBytes(m);
+                sender.Send(d, d.Length, remoteAddress, remotePort);
+
                 while (true)
                 {
                     string message = Console.ReadLine(); 
@@ -122,10 +127,10 @@ namespace ITIROD_1lab
                         user.chat.Add(identification, new List<string>());
                     }
                     Console.Clear();
-                    if (user.chat.Count > 0)
+                    /*if (user.chat.Count > 0)
                     {
-                        Console.WriteLine(user.chatToString());
-                    }
+                        Console.WriteLine(user.chatToString(identification));
+                    }*/
                     SendMessage();
                     break;
                 }
@@ -150,6 +155,14 @@ namespace ITIROD_1lab
                     if (message.EndsWith("exit()"))
                     {
                         Console.WriteLine(message.Substring(0,message.Length-8)+ " вышел");
+                    } else if(message.Equals("enter"))
+                    {
+                        if (user.chat.ContainsKey(identification))
+                        {
+                            string m = user.chatToString(identification);
+                            byte[] d = Encoding.Unicode.GetBytes(m);
+                            sender.Send(d, d.Length, remoteAddress, remotePort);
+                        }
                     }
                     else
                     {
