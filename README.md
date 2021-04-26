@@ -1,2 +1,2 @@
-# ITIROD 1 lab
-Tsvetkov Ilya 853503
+# Tsvetkov Ilya 
+ 853503
