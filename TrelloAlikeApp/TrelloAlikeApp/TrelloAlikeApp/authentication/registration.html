@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrelloAlikeApp</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+<header>
+    <figure class="row-container">
+        <img src="../img/logo.png" alt=""/>
+        <figcaption><h2 class="text_white">TrelloAlikeApp</h2></figcaption>
+    </figure>
+    <nav>
+        <!--onclick would be deleted in lab 4 it's only for page-jumps imitation!-->
+        <button class="button" onclick="location.href='login.html'">Login</button>
+        <button class="button" onclick="location.href='registration.html'">Register</button>
+    </nav>
+</header>
+<main class="main-register">
+    <h2 class="text_yellow">Registration</h2>
+    <form class="auth-form" action="../boards/boards.html">
+        <label class="text_yellow auth-form__field">
+            Login
+            <input class="text-field" placeholder="Login">
+        </label>
+
+        <label class="text_yellow auth-form__field">
+            Email
+            <input class="text-field" placeholder="Email">
+        </label>
+
+        <label class="text_yellow auth-form__field">
+            Password
+            <input class="text-field" placeholder="Password" type="password">
+        </label>
+
+        <label class="text_yellow auth-form__field">
+            Repeat password
+            <input class="text-field" placeholder="Repeat password" type="password">
+        </label>
+
+        <button class="button_green">Submit</button>
+    </form>
+</main>
+<footer>
+    <h2>TrelloAlikeApp</h2>
+    <section class="info-container">
+        <ul class="hr">
+            <li>
+                <button onclick="window.location.href = 'https://vk.com';" class="button_vk"/>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'https://web.telegram.org';" class="button_tg"/>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'https://www.facebook.com/';" class="button_fb"/>
+            </li>
+        </ul>
+    </section>
+
+    <section class="info-container">
+        <h3>Designed</h3>
+        <p>Company</p>
+    </section>
+</footer>
+</body>
+</html>
