@@ -144,6 +144,7 @@ footer{
 .button{
     display: inline-block;
     color: black;
+    background-color: white;
     font-weight: 700;
     text-decoration: none;
     user-select: none;
@@ -414,7 +415,7 @@ ul.hr li {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .column-list__item{

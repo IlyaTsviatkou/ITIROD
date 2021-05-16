@@ -30,9 +30,8 @@
 <main>
     <h2 class="text_blue">Board Title</h2>
 
-    <form class="board-form" action="boards.html">
-        <div class="board-form-column">
-            <div class="board-form">
+    <form class="board-form-column" action="boards.html">
+        <div class="board-form">
         <label class="vertical-field main-field text_blue">Color
             <select class="text-field">
                 <option class="item_red text_white">Red</option>
@@ -47,7 +46,7 @@
         <label class="vertical-field main-field text_blue">Title
             <input class="text-field">
         </label>
-            </div>
+        </div>
         <div>
             <label for="file">Choose file to upload</label>
             <input type="file" id="file" name="file" multiple>
@@ -70,13 +69,16 @@
     <section class="info-container">
         <ul class="hr">
             <li>
-                <button onclick="window.location.href = 'https://vk.com';" class="button_vk"/>
+                <a href="https://vk.com"><img src="../img/vk.png" width="50"
+                                              height="50" border="0" alt="vkontakte"></a>
             </li>
             <li>
-                <button onclick="window.location.href = 'https://web.telegram.org';" class="button_tg"/>
+                <a href="https://web.telegram.org"><img src="../img/tg.png" width="50"
+                                                        height="50" border="0" alt="telegram"></a>
             </li>
             <li>
-                <button onclick="window.location.href = 'https://www.facebook.com/';" class="button_fb"/>
+                <a href="https://www.facebook.com/"><img src="../img/fb.png" width="50"
+                                                         height="50" border="0" alt="facebook"></a>
             </li>
         </ul>
     </section>
