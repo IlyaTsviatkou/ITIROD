@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrelloAlikeApp</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <figure class="row-container">
+        <img src="../img/logo.png" alt=""/>
+        <figcaption><h2 class="text_white">TrelloAlikeApp</h2></figcaption>
+    </figure>
+
+    <figure class="row-container">
+        <img src="../img/user.png" alt=""/>
+        <figcaption><p class="text_white">User</p></figcaption>
+    </figure>
+
+    <nav>
+        <!--onclick would be deleted in lab 4 it's only for page-jumps imitation!-->
+        <button class="button" onclick="location.href='boards.html'">
+            My boards
+        </button>
+        <button class="button " onclick="location.href='../authentication/registration.html'">
+            Log out
+        </button>
+    </nav>
+</header>
+<main>
+    <h2 class="text_blue">My Boards</h2>
+    <form class="board-form">
+        <label class="vertical-field main-field text_blue">Search
+            <input class="text-field">
+        </label>
+        <button class="button_green">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+    </form>
+    <div class="board-list">
+        <ul class="bd">
+            <li>
+                <button class="button_add" title="Add board" onclick="location.href='add-edit-board.html'"/>
+            </li>
+            <li>
+                <section class="board-list__item item_red">
+                    <a href="board.html">
+                        <h3 class="text_white">Board 1</h3>
+                        <img src="../img/logo.png" alt="boardlogo">
+                    </a>
+                    <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-button icon-button_white" title="Edit">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                </section>
+            </li>
+            <li>
+                <section class="board-list__item item_yellow">
+                    <a href="board.html">
+                        <h3 class="text_white">Board 2</h3>
+                        <img src="../img/logo.png" alt="boardlogo">
+                    </a>
+                    <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-button icon-button_white" title="Edit">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                </section>
+            </li>
+            <li>
+                <section class="board-list__item item_orange">
+                    <a href="board.html">
+                        <h3 class="text_white">Board 3</h3>
+                        <img src="../img/logo.png" alt="boardlogo">
+                    </a>
+
+                    <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-button icon-button_white" title="Edit">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                </section>
+            </li>
+
+            <li>
+        <section class="board-list__item item_green">
+            <a href="board.html"><h3 class="text_white">Board 4</h3>
+                <img src="../img/logo.png" alt="boardlogo"></a>
+            <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+            <button class="icon-button icon-button_white" title="Edit">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </button>
+        </section>
+</li>
+            <li>
+        <section class="board-list__item item_blue">
+            <a href="board.html"><h3 class="text_white">Board 5</h3>
+                <img src="../img/logo.png" alt="boardlogo"></a>
+            <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+            <button class="icon-button icon-button_white" title="Edit">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </button>
+        </section>
+            </li>
+            <li>
+        <section class="board-list__item item_cyan">
+            <a href="board.html"><h3 class="text_white">Board 6</h3>
+                <img src="../img/logo.png" alt="boardlogo"></a>
+            <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+            <button class="icon-button icon-button_white" title="Edit">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </button>
+        </section>
+            </li>
+            <li>
+                <section class="board-list__item item_red">
+                    <a href="board.html"><h3 class="text_white">Board 7</h3>
+                        <img src="../img/logo.png" alt="boardlogo"></a>
+                    <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-button icon-button_white" title="Edit">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                </section>
+            </li>
+            <li>
+                <section class="board-list__item item_violet">
+                    <a href="board.html"><h3 class="text_white">Board 8</h3>
+                        <img src="../img/logo.png" alt="boardlogo"></a>
+                    <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-button icon-button_white" title="Edit">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                </section>
+            </li>
+            <li>
+                <section class="board-list__item item_yellow">
+                    <a href="board.html"><h3 class="text_white">Board 9</h3>
+                        <img src="../img/logo.png" alt="boardlogo"></a>
+                    <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-button icon-button_white" title="Edit">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                </section>
+            </li>
+        </ul>
+    </div>
+
+    <!--onclick would be deleted in lab 4 it's only for page-jumps imitation!-->
+
+</main>
+<footer>
+    <h2>TrelloAlikeApp</h2>
+    <section class="info-container">
+        <ul class="hr">
+            <li>
+                <a href="https://vk.com"><img src="../img/vk.png" width="50"
+                                              height="50" border="0" alt="vkontakte"></a>
+            </li>
+            <li>
+                <a href="https://web.telegram.org"><img src="../img/tg.png" width="50"
+                                                        height="50" border="0" alt="telegram"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/"><img src="../img/fb.png" width="50"
+                                                         height="50" border="0" alt="facebook"></a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="info-container">
+        <h3>Designed</h3>
+        <p>Company</p>
+    </section>
+</footer>
+</body>
+</html>

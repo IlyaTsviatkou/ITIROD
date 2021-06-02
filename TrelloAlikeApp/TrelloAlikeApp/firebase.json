@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "TrelloAlikeApp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

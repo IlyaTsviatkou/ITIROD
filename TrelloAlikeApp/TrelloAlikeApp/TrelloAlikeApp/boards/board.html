@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrelloAlikeApp</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <figure class="row-container">
+        <img src="../img/logo.png" alt=""/>
+        <figcaption><h2 class="text_white">TrelloAlikeApp</h2></figcaption>
+    </figure>
+
+    <figure class="row-container">
+        <img src="../img/user.png" alt=""/>
+        <figcaption><p class="text_white">User</p></figcaption>
+    </figure>
+
+    <nav>
+        <!--onclick would be deleted in lab 4 it's only for page-jumps imitation!-->
+        <button class="button " onclick="location.href='boards.html'">
+            My boards
+        </button>
+        <button class="button " onclick="location.href='../authentication/registration.html'">
+            Log out
+        </button>
+    </nav>
+</header>
+<main>
+    <h2 class="text_blue">Board 1</h2>
+    <div class="column-list">
+
+        <!--onclick would be deleted in lab 4 it's only for page-jumps imitation!-->
+
+        <section class="column-list__item">
+            <div class="row-container">
+                <h2 class="text_blue">ToDo</h2>
+            </div>
+
+            <div class="task-list">
+                <article class="task-list__item text_white item_yellow">
+                    <h4>Task1</h4>
+                    <p>Description</p>
+                    <div class="row-container">
+                        <time>22.03.2021</time>
+                        <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                        <button class="icon-button icon-button_white" title="Edit">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <button class=" button_green task-list__button" onclick="location.href='../tasks/add-edit-task.html'">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Add task
+            </button>
+        </section>
+
+        <section class="column-list__item">
+            <div class="row-container">
+                <h2 class="text_blue">Doing</h2>
+            </div>
+
+            <div class="task-list">
+                <article class="task-list__item text_white item_red">
+                    <h4>Task1</h4>
+                    <p>Description</p>
+                    <div class="row-container">
+                        <time>20.03.2021</time>
+                        <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                        <button class="icon-button icon-button_white" title="Edit">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="task-list__item text_white item_yellow">
+                    <h4>Task11</h4>
+                    <p>Description</p>
+                    <div class="row-container">
+                        <time>02.03.2021</time>
+                        <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                        <button class="icon-button icon-button_white" title="Edit">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <button class=" button_green task-list__button" onclick="location.href='../tasks/add-edit-task.html'">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Add task
+            </button>
+        </section>
+
+        <section class="column-list__item">
+            <div class="row-container">
+                <h2 class="text_blue">Done</h2>
+            </div>
+
+            <div class="task-list">
+                <article class="task-list__item text_white item_green">
+                    <h4>Task2</h4>
+                    <p>Description</p>
+                    <div class="row-container">
+                        <time>30.03.2021</time>
+                        <button class="icon-button icon-button_white icon-button_shifted" title="Delete">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                        <button class="icon-button icon-button_white" title="Edit">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <button class=" button_green task-list__button" onclick="location.href='../tasks/add-edit-task.html'">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Add task
+            </button>
+        </section>
+        <!--onclick would be deleted in lab 4 it's only for page-jumps imitation!-->
+
+
+    </div>
+</main>
+<footer>
+    <h2>TrelloAlikeApp</h2>
+    <section class="info-container">
+        <ul class="hr">
+            <li>
+                <a href="https://vk.com"><img src="../img/vk.png" width="50"
+                                              height="50" border="0" alt="vkontakte"></a>
+            </li>
+            <li>
+                <a href="https://web.telegram.org"><img src="../img/tg.png" width="50"
+                                                        height="50" border="0" alt="telegram"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/"><img src="../img/fb.png" width="50"
+                                                         height="50" border="0" alt="facebook"></a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="info-container">
+        <h3>Designed</h3>
+        <p>Company</p>
+    </section>
+</footer>
+</body>
+</html>
