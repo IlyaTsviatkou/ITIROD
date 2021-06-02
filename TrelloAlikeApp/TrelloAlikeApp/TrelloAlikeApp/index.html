@@ -1,102 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0;URL=authentication/login.html" />
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TrelloAlikeApp</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.3.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.3.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-performance.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 
-    <!--
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<header id = "header">
+</header>
+<main id = "main">
+</main>
+<footer>
+  <h2>TrelloAlikeApp</h2>
+  <section class="info-container">
+    <ul class="hr">
+      <li>
+        <a href="https://vk.com"><img src="img/vk.png" width="50"
+                                      height="50" border="0" alt="vkontakte"></a>
+      </li>
+      <li>
+        <a href="https://web.telegram.org"><img src="img/tg.png" width="50"
+                                                height="50" border="0" alt="telegram"></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/"><img src="img/fb.png" width="50"
+                                                 height="50" border="0" alt="facebook"></a>
+      </li>
+    </ul>
+  </section>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  <section class="info-container">
+    <h3>Designed</h3>
+    <p>Company</p>
+  </section>
+</footer>
 
-    <script src="/__/firebase/8.4.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.4.1/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+<script defer type="module">
+ // import firebase from "firebase";
 
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
+ let firebaseConfig = {
+    apiKey: "AIzaSyCCxrXscUVk5Uuisyy2etcl1ZTcsQ-lqnM",
+    authDomain: "trelloalikeapp.firebaseapp.com",
+    databaseURL: "https://trelloalikeapp-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "trelloalikeapp",
+    storageBucket: "trelloalikeapp.appspot.com",
+    messagingSenderId: "981658524762",
+    appId: "1:981658524762:web:5e115f96e6f89e0b3bcc63",
+    measurementId: "G-HJDQE69HJG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<script defer type="text/javascript" src="scripts/models/task.js"></script>
+<script defer type="text/javascript" src="scripts/models/column.js"></script>
+<script defer type="text/javascript" src="scripts/models/board.js"></script>
+<script defer type="text/javascript" src="scripts/models/board-list.js"></script>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth',
-            'database',
-            'firestore',
-            'functions',
-            'messaging',
-            'storage',
-            'analytics',
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<script defer type="text/javascript" src="scripts/views/add-edit-task-view.js"></script>
+<script defer type="text/javascript" src="scripts/views/auth-view.js"></script>
+<script defer type="text/javascript" src="scripts/views/boards-view.js"></script>
+<script defer type="text/javascript" src="scripts/views/tasks-view.js"></script>
+
+<script defer type="text/javascript" src="scripts/service.js"></script>
+
+<script defer type="text/javascript" src="scripts/controllers/auth-controller.js"></script>
+<script defer type="text/javascript" src="scripts/controllers/boards-controller.js"></script>
+<script defer type="text/javascript" src="scripts/controllers/tasks-controller.js"></script>
+<script defer type="text/javascript" src="scripts/controllers/add-edit-task-controller.js"></script>
+
+<script defer type="text/javascript" src="scripts/initialisation.js"></script>
+</body>
 </html>
