@@ -63,6 +63,7 @@ h4{
 main{
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -336,25 +337,14 @@ ul.bd {
     max-width: 90%;
     margin: 0 auto;
     padding: 4px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;
+
 }
 
 ul.bd li {
-    display: inline;
-    margin-right: 30px;
-    height: 30px;
+    padding: 5%;
+    width: fit-content;
+    display: inline-block;
+    vertical-align: text-top;
 }
 
 ul.hr {
@@ -418,6 +408,37 @@ ul.hr li {
     gap: 1rem;
     overflow-x: hidden;
 }
+@media (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+    .column-list {
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        overflow-x: hidden;
+    }
+    input{
+        font: var(--medium-text);
+        height:4rem;
+    }
+
+    .text_blue{
+        color: var(--darkblue-color);
+        height:4rem;
+    }
+    .text_yellow{
+        color: var(--yellow-color);
+        height:4rem;
+    }
+
+    .text_white{
+        color: var(--white-color);
+        height:4rem;
+    }
+}
 
 .column-list__item{
     background-color: var(--white-color);
@@ -426,7 +447,7 @@ ul.hr li {
     width: 25%;
     height: 80%;
     padding: 1rem;
-    margin-right: 105px;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;

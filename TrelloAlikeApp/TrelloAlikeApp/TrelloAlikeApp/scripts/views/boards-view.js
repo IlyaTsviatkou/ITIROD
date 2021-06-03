@@ -41,13 +41,20 @@ class BoardsView {
 
     displayBoards(brd){
         const lst = document.getElementById(this._listId);
-        lst.innerHTML = `<ul class="bd">
-                <li>
+        while (lst.firstElementChild != null) {
+            lst.removeChild(lst.firstElementChild);
+        }
+        let ul = document.createElement('ul');
+        ul.setAttribute('class', 'bd');
+        lst.insertAdjacentElement("afterbegin", ul)
+
+        ul.innerHTML =
+                `<li>
                    <button class="button_add" id="${this._btnId}" title="Add board"/>
                 </li>
-                </ul>`
-        lst.innerHTML += brd.map((item) =>
-            `<ul class="bd"><li>
+                `
+        ul.innerHTML += brd.map((item) =>
+            `<li>
                 <section id="${item.id}" class="board-list__item item_${item.color}" draggable="true">
                     <section id="${item.id}"> 
                             <h3 class="text_white">${item.name}</h3>
@@ -59,8 +66,9 @@ class BoardsView {
                     <button id="${item.id}-E" class="icon-button icon-button_white">
                         <i class="fa fa-pencil" aria-hidden="true"></i>
                     </button>
-                </section></li></ul>`
-        ).join('\n');
+                </section></li>`
+        ).join('\n') ;
+
     }
 
     displayAddEdit(formId, cancelId) {
