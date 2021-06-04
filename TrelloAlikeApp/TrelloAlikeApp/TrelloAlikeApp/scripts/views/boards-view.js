@@ -81,7 +81,7 @@ class BoardsView {
 
 
         let addEditForm = document.createElement('form');
-        addEditForm.setAttribute('class', 'board-form');
+        addEditForm.setAttribute('class', 'board-form-add-edit');
         addEditForm.setAttribute('id', formId);
         addEditForm.innerHTML = `<label class="vertical-field main-field text_blue">Color
             <select name="color" class="text-field">
@@ -97,10 +97,10 @@ class BoardsView {
         <label class="vertical-field main-field text_blue">Name
             <input name="name" class="text-field">
         </label>
-        <button id = "${cancelId}" class="button button_blue">
+        <button id = "${cancelId}" class="button_blue">
             Cancel
         </button>
-        <button type="submit" class="button button_green">
+        <button type="submit" class="button_green">
             Confirm
         </button>`;
         main.insertBefore(addEditForm, lst);

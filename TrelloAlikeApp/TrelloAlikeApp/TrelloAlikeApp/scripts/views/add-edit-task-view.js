@@ -30,8 +30,8 @@ class AddEditTaskView {
                 <input type="date" name="date" class="text-field">
             </label>
             <div class="row-container">
-                <button id="${cancelId}" class="button button_blue">Cancel</button>
-                <button type="submit" class="button button_green">Confirm</button>
+                <button id="${cancelId}" class="button_blue">Cancel</button>
+                <button type="submit" class="button_green">Confirm</button>
             </div>
         </form>`;
     }

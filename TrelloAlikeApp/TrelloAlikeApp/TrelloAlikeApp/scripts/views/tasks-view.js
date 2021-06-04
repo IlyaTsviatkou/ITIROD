@@ -45,8 +45,7 @@ class TasksView {
                 </div>
     
                 <button id="${item.id}-A" class="button_green task-list__button">
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    Add task
+                    <i class="fa fa-plus" aria-hidden="true"></i> 
                 </button>`;
             lst.insertAdjacentElement("beforeend", column)
 
